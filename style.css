@@ -10,8 +10,8 @@ body {
 }
 
 .chat-container {
-    width: 400px;  /* Increased width */
-    height: 500px; /* Increased height */
+    width: 450px;  /* Increased width */
+    height: 600px; /* Increased height */
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -24,7 +24,7 @@ body {
 
 .chat-box {
     flex-grow: 1;
-    max-height: 400px;
+    max-height: 480px; /* Limit chat box height */
     overflow-y: auto;
     margin-bottom: 10px;
     padding: 10px;
@@ -35,12 +35,18 @@ body {
     word-wrap: break-word; /* Break long words automatically */
 }
 
-.user-input {
+.input-container {
+    display: flex;
     width: 100%;
+}
+
+.user-input {
+    flex-grow: 1;
     padding: 10px;
     margin-top: 5px;
     border-radius: 5px;
     border: 1px solid #ddd;
+    margin-right: 10px; /* Space between input and button */
 }
 
 .send-btn {
@@ -51,6 +57,7 @@ body {
     margin-top: 5px;
     border-radius: 5px;
     cursor: pointer;
+    width: 80px; /* Fixed width for button */
 }
 
 .send-btn:hover {
