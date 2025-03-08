@@ -3,20 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fullscreen Background</title>
+    <title>Background Video</title>
     <style>
         * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            overflow: hidden;
         }
-        body {
-            background: url('https://media.tenor.com/ksdhTd-LCh0AAAAM/moon-full-moon.gif') no-repeat center center fixed;
-            background-size: cover;
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
             height: 100vh;
+            object-fit: cover;
         }
     </style>
 </head>
 <body>
+    <video autoplay loop muted playsinline>
+        <source src="https://drive.google.com/uc?export=download&id=1mmmeIJNp8yS5z2iSohCRcEjfF8y79vyZ" type="video/mp4">
+    </video>
 </body>
 </html>
